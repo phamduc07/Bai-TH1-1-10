@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - B25DCCC302</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <span class="logo">PAD.dev</span>
+      <button id="menuBtn" class="menu-btn">☰</button>
+      <nav id="nav">
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+        <button id="themeBtn">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="about-box">
+        <h1>Phạm Anh Đức</h1>
+        <p>Sinh viên CNTT - PTIT (MSV: B25DCCC302)</p>
+        <p>Định hướng trở thành Lập trình viên Web/Phần mềm.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Kỹ năng</h2>
+      <div class="grid-skills">
+        <div class="card">HTML5, CSS3, JavaScript</div>
+        <div class="card">Node.js, Express.js</div>
+        <div class="card">Java, Python, C++</div>
+        <div class="card">MySQL, SQL Server, Git</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Dự án</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-tag="all">Tất cả</button>
+        <button class="filter-btn" data-tag="web">Web</button>
+        <button class="filter-btn" data-tag="app">App</button>
+      </div>
+      <div class="grid-projects">
+        <div class="card project-item" data-category="web">
+          <h3>Expense Tracker</h3>
+          <p>Ứng dụng web quản lý chi tiêu cá nhân bằng JavaScript.</p>
+        </div>
+        <div class="card project-item" data-category="app">
+          <h3>Clinic Management</h3>
+          <p>Phần mềm quản lý phòng khám mắt viết bằng Python Tkinter.</p>
+        </div>
+        <div class="card project-item" data-category="web">
+          <h3>Hoosier Burger DBMS</h3>
+          <p>Hệ thống cơ sở dữ liệu và truy vấn quản lý bán hàng.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Liên hệ</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Họ và tên">
+        <span class="error" id="nameErr"></span>
+
+        <input type="email" id="email" placeholder="Email">
+        <span class="error" id="emailErr"></span>
+
+        <div class="textarea-box">
+          <textarea id="msg" maxlength="200" placeholder="Nội dung tin nhắn"></textarea>
+          <span id="charCount">0/200</span>
+        </div>
+        <span class="error" id="msgErr"></span>
+
+        <button type="submit">Gửi</button>
+        <p id="successMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Phạm Anh Đức - B25DCCC302</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
